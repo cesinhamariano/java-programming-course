@@ -31,7 +31,7 @@
 
 \author[Vinicius Miana]{Vinicius Miana}
 
-\title[Short Title\hspace{2em}\insertframenumber/\inserttotalframenumber]{Programação Defensiva}
+\title[Programação Defensiva\hspace{2em}\insertframenumber/\inserttotalframenumber]{Programação Defensiva}
 
 %\date{17 de abril de 2013} %leave out for today's date to be insterted
 
@@ -54,6 +54,7 @@
   \end{itemize}
 \end{frame}
 
+\section{Programação Defensiva}  
 
 \begin{frame}[fragile]
   \frametitle{Primeiro Exemplo}
@@ -74,20 +75,31 @@ desta maneira evitamos um NPE.
 
 \begin{frame}[fragile]
   \frametitle{Definição}
-  Exemplo
-\begin{lstlisting}
-Aluno a = alunoDAO.getAluno(id);
-addCourse(a.getId(),a.getName(),"Programacao Java");
-\end{lstlisting}
-e se a for null??
-\begin{lstlisting}
-Aluno a = alunoDAO.getAluno(id);
-if(a != null) {
-     addCourse(a.getId(),a.getName(),"Programacao Java");
-}
-\end{lstlisting}
-desta maneira evitamos um NPE. 
+  Programação Defensiva é uma forma de programar de forma a garantir que o software
+continue funcionando mesmo que ele seja usado de maneiras não esperadas. Ao usar a
+programação defensiva temos como objetivos:
+  \begin{itemize}
+  \item Redução dos erros e problemas;
+  \item Tornar o código mais compreensível;
+  \item Tornar o comportamento do software mais previsível.
+  \end{itemize}
+
 \end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{Principais Técnicas}
+  Similarmente a direção defensiva, devemos ao programar pensar em coisas que podem errado.
+  Proatividade é essencial nestes casos. Para programar defensivamente, usam-se as melhorias
+práticas de engenharia de software, tais como
+  \begin{itemize}
+  \item Refatoração;
+  \item ;
+  \item .
+  \end{itemize}
+
+\end{frame}
+
 
 
 
